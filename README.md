@@ -6,4 +6,6 @@ use curl, postman or postwoman to send requests
 
 can use /api/upload/multiple or /api/upload/single to upload 
 
-A simple example is shown below
+Features:
+- Handles multiple requests from different clients
+- File handling is done by multer
