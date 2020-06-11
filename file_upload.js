@@ -43,6 +43,18 @@ app.post('/api/upload/single', upload.single('singleFile'), (req,res,next) => {
             "code" : "200",
             "message" : "file uploaded successfully"
         });
+
+        try{
+            shell.exec('./rcloneupload.sh');
+            console.log("called");
+            var fs = require('fs');
+            var filename = file.path;
+            console.log('OK: ' + filename);
+        }catch(err){
+            console.log(err);
+
+        }
+
     }catch(err){
         console.log(error.message);
         res.status(200).json({
