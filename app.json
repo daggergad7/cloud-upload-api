@@ -5,7 +5,7 @@
 	"keywords": ["cloudUploadAPI"],
 	"env": {
 		"RCLONE_CONFIG": {
-			"description": "Rclone config to mount in one line, replace line breaks with \"\\n\"",
+			"description": "Rclone config to mount, Copy paste your rClone config file \"\\n\"",
 			"required": false
 		},
 		"RCLONE_DESTINATION": {
