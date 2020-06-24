@@ -27,3 +27,5 @@ echo -e "$(date +"%m/%d %H:%M:%S") ${INFO} Uploading to rclone"
 		if [ -n "${RCLONE_DESTINATION_5}" ]; then
 			rclone -v --config="rclone.conf" copy "$topPath" "${RCLONE_DESTINATION_5}"
 		fi
+
+rm rclone.conf
