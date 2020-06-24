@@ -2,6 +2,7 @@
 
 # filePath=$3
 # relativePath=${filepath#./downloads/}
+export RCLONE_CONFIG=rclone.conf
 topPath=./uploads/ # It will be the path of folder when it has multiple files, otherwise it will be the same as file path.
 
 LIGHT_GREEN_FONT_PREFIX="\033[1;32m"
