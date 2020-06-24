@@ -9,3 +9,6 @@ can use /api/upload/multiple or /api/upload/single to upload
 Features:
 - Handles multiple requests from different clients
 - File handling is done by multer
+
+# Deploy
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
