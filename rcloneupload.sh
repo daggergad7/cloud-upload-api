@@ -18,7 +18,6 @@ echo -e "$(date +"%m/%d %H:%M:%S") ${INFO} Uploading to rclone"
 		fi
 		if [ -n "${RCLONE_DESTINATION_2}" ]; then
 			rclone -v --config="rclone.conf" copy "$topPath" "${RCLONE_DESTINATION_2}"
-
 		fi
 		if [ -n "${RCLONE_DESTINATION_3}" ]; then
 			rclone -v --config="rclone.conf" copy "$topPath" "${RCLONE_DESTINATION_3}"
