@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# filePath=$3
-# relativePath=${filepath#./downloads/}
 echo -e "$RCLONE_CONFIG" > rclone.conf
 
 export RCLONE_CONFIG=rclone.conf
@@ -28,5 +26,6 @@ echo -e "$(date +"%m/%d %H:%M:%S") ${INFO} Uploading to rclone"
 		if [ -n "${RCLONE_DESTINATION_5}" ]; then
 			rclone -v --config="rclone.conf" copy "$topPath" "${RCLONE_DESTINATION_5}"
 		fi
-
+rm -rf ./uploads
+mkdir uploads
 rm rclone.conf
