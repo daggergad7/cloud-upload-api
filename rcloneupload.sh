@@ -3,7 +3,7 @@
 echo -e "$RCLONE_CONFIG" > rclone.conf
 
 export RCLONE_CONFIG=rclone.conf
-topPath=./uploads/ # It will be the path of folder when it has multiple files, otherwise it will be the same as file path.
+topPath=./uploads/ 
 
 LIGHT_GREEN_FONT_PREFIX="\033[1;32m"
 FONT_COLOR_SUFFIX="\033[0m"
@@ -26,6 +26,6 @@ echo -e "$(date +"%m/%d %H:%M:%S") ${INFO} Uploading to rclone"
 		if [ -n "${RCLONE_DESTINATION_5}" ]; then
 			rclone -v --config="rclone.conf" copy "$topPath" "${RCLONE_DESTINATION_5}"
 		fi
-rm -rf ./uploads
-mkdir uploads
+
+
 rm rclone.conf
