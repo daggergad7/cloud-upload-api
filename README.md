@@ -5,6 +5,7 @@ use heroku to deploy the app
 use curl, postman or postwoman to send requests
 
 can use /api/upload/multiple or /api/upload/single to upload 
+Send a POST request to https://yourherokuapp.com/api/upload/multiple
 
 Features:
 - Handles multiple requests from different clients
