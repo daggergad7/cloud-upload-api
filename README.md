@@ -14,6 +14,7 @@ The POST request should contain the following:
 Features:
 - Handles multiple requests from different clients
 - File handling is done by multer
+- Multiple files can be uploaded with only one POST request
 
 # Deploy
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
